@@ -104,3 +104,42 @@
 # file_name_fix = file_name.strip().lower().replace(".txt",".md")
 # file_size_gb = file_size//(1024**2)
 # print(f"File {file_name_fix} has {file_size_gb} GB")
+
+#Collections(list, tuple, slicing)
+#1 list and list methods
+cars = ['BMW', 'Mercedess', 'Audi']
+cars.append('Reno') #ADD element to the end
+print(cars)
+#element[n:N] take frome n to N-1 elements
+print(cars[1:3])
+print(cars[::-1]) #::-1 reverse list
+
+#tuple
+local_host = ("localhost", 8080, "production") #we can`t change something after creation
+print(local_host)
+
+#PRACTICS
+#Easy
+linux_distros = ['Ubuntu', 'Debian', 'Fedora']
+print(linux_distros[1])
+
+my_tuple = (1, 2, 3)
+print(my_tuple[-1])
+
+#Medium
+prices = [120, 150, 130, 180, 200]
+print(prices[0:3])
+print(prices[::-1])
+
+#Hard
+raw_data = "Python|JS|HTML|CSS"
+tech_list = raw_data.split("|")
+tech_list.append("SQL")
+print(tech_list)
+
+#More
+portfolio = ["Apple", "Tesla", "Google", "Amazon"]
+portfolio[1] = "Microsoft"
+portfolio.append("Nvidia")
+print(portfolio)
+print(portfolio[1:3])
